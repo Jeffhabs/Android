@@ -7,18 +7,12 @@
               android:orientation="vertical"
               tools:context="com.example.jeffreyhaberle.musicevent.MainActivity">
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="top|center">
-    </LinearLayout>
-
     <ImageView
         android:layout_width="112dp"
         android:layout_height="166dp"
         android:id="@+id/imageView"
-        android:src="@drawable/music2"/>
+        android:src="@drawable/music2"
+        android:contentDescription="music logo"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -39,7 +33,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enter Zip"
+        android:text="@string/enter_zip_button"
         android:id="@+id/enter_zip_button"
         android:layout_gravity="center_horizontal"
         android:padding="4dp"/>

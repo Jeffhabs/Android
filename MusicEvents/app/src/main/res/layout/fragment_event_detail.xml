@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/event_artist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/artist_title"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/event_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/event_city"
+            style="?android:listSeparatorTextViewStyle" />
+
+        <TextView
+            android:id="@+id/event_zip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/event_zip"
+            android:padding="4dp"
+            />
+        <TextView
+            android:id="@+id/event_venue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/event_venue"
+            android:layout_below="@+id/event_city"
+            android:padding="10dp"
+            />
+        <TextView
+            android:id="@+id/event_venue_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/event_venue_address"
+            android:padding="10dp"
+            android:layout_alignTop="@+id/event_venue"
+            android:layout_alignRight="@+id/event_zip"
+            android:layout_alignEnd="@+id/event_zip"/>
+
+        <Button
+            android:id="@+id/get_tickets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/event_venue"
+            android:text="@string/event_get_tickets"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

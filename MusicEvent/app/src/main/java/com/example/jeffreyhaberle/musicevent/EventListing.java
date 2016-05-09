@@ -16,6 +16,7 @@ import android.widget.Toast;
 
 public class EventListing extends AppCompatActivity {
 
+
     private static final String ZIP_CODE_ENTERED = "com.example.jeffreyhaberle.musicevent.enter_zip";
     private String mZipCode;
     private TextView mZipCodeTextView;
